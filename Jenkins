@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-id') 
+        DOCKERHUB_CREDENTIALS = credentials('acr-creds') 
         GITHUB_REPO_URL = 'https://github.com/BelieveXD/myappexam.git'
-        DOCKERHUB_USERNAME = 'your-dockerhub-username'
-        IMAGE_NAME = 'my-rails-app'
+        DOCKERHUB_USERNAME = 'BelieveXD'
+        IMAGE_NAME = 'myappexam'
     }
 
     stages {
